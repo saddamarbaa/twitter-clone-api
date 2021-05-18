@@ -6,7 +6,10 @@ const getTweets = require("../helpers/search");
 module.exports = (req, res) => {
 	const query = req.query.q;
 	const count = req.query.count;
-	getTweets(query, count)
+	const nextPageId = req.query.max_id;
+	console.log(query, count, nextPageId);
+
+	getTweets(query, count, nextPageId)
 		.then((response) => {
 			res.status(200).send({
 				result: response.data,

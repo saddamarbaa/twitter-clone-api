@@ -17,7 +17,7 @@ app.use(express.json());
 
 // Routes which Should handle the requests
 app.use("/", indexRouter);
-app.use("/api/tweet", tweetRouter);
+app.use("/api/tweets", tweetRouter);
 
 // Error handler
 app.use((req, res, next) => {
