@@ -8,6 +8,7 @@ const dotenv = require("dotenv").config();
 // Import Routes
 const indexRouter = require("./routes/index");
 const tweetRouter = require("./routes/tweet");
+const userRouter = require("./routes/user");
 
 const app = express();
 
@@ -21,6 +22,7 @@ const mongoDB = require("./config/db");
 // Routes which Should handle the requests
 app.use("/", indexRouter);
 app.use("/api/tweets", tweetRouter);
+app.use("/api/user", userRouter);
 
 // Error handler
 app.use((req, res, next) => {
