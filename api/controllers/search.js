@@ -7,7 +7,7 @@ module.exports = (req, res) => {
 	const query = req.query.q;
 	const count = req.query.count;
 	const nextPageId = req.query.max_id;
-	console.log(query, count, nextPageId);
+
 
 	getTweets(query, count, nextPageId)
 		.then((response) => {

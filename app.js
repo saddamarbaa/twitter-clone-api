@@ -15,6 +15,9 @@ app.use(morgan("dev"));
 app.use(cors());
 app.use(express.json());
 
+// Connecting to MongoDB
+const mongoDB = require("./config/db");
+
 // Routes which Should handle the requests
 app.use("/", indexRouter);
 app.use("/api/tweets", tweetRouter);
