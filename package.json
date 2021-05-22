@@ -30,5 +30,8 @@
 		"mongoose": "^5.12.10",
 		"mongose": "^0.0.2-security",
 		"morgan": "^1.10.0"
+	},
+	"engines": {
+		"node": "v14.16.0"
 	}
 }

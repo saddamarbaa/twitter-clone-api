@@ -1,9 +1,9 @@
 /** @format */
 
-const express = require("express");
-const cors = require("cors");
 const morgan = require("morgan");
 const dotenv = require("dotenv").config();
+const cors = require("cors");
+const express = require("express");
 
 // Import Routes
 const indexRouter = require("./routes/index");
@@ -13,8 +13,8 @@ const userRouter = require("./routes/user");
 const app = express();
 
 app.use(morgan("dev"));
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 
 // Connecting to MongoDB
 const mongoDB = require("./config/db");
