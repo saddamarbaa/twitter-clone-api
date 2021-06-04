@@ -29,7 +29,8 @@
 		"jsonwebtoken": "^8.5.1",
 		"mongoose": "^5.12.10",
 		"mongose": "^0.0.2-security",
-		"morgan": "^1.10.0"
+		"morgan": "^1.10.0",
+		"multer": "^1.4.2"
 	},
 	"engines": {
 		"node": "v14.16.0"

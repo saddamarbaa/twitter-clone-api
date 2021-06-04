@@ -21,7 +21,7 @@ const mongoDB = require("./config/db");
 
 // Routes which Should handle the requests
 app.use("/", indexRouter);
-app.use("/api/tweets", tweetRouter);
+app.use("/api/tweet", tweetRouter);
 app.use("/api/user", userRouter);
 
 // Error handler
