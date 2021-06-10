@@ -4,8 +4,8 @@ const express = require("express");
 const router = express.Router();
 const multer = require("multer");
 
-const searchTweets = require("../api/controllers/search");
-const { addNewTweet } = require("../api/controllers/tweet");
+const { addNewTweet, getAllTweets } = require("../api/controllers/tweet");
+const authenticateToken = require("../api/auths/auth");
 
 // const authenticateToken = require("../api/auths/auth");
 const getImageExtension = require("../api/helpers/imageExtension");
@@ -16,8 +16,6 @@ const storage = multer.diskStorage({
 	destination: (req, file, cb) => {
 		cb(null, "public/uploads");
 	},
-
-	// console.log(`${t1}${t2 ? `(${t2})` : ''}`);
 
 	// By default, multer removes file extensions so let's add them back
 	filename: (req, file, cb) => {
@@ -32,9 +30,10 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // API Endpoint for Handling Post Request
-router.post("/", upload.single("tweetImage"), addNewTweet);
+// router.post("/", upload.single("tweetImage"), addNewTweet);
 
-// API Endpoint to search tweets
-router.get("/search", searchTweets);
+// API Endpoint for Handling Get Request
+// API Endpoint to return all tweets
+// router.get("/", getAllTweets);
 
 module.exports = router;

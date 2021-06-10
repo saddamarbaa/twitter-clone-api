@@ -7,8 +7,9 @@ const express = require("express");
 
 // Import Routes
 const indexRouter = require("./routes/index");
-const tweetRouter = require("./routes/tweet");
+const tweetSearchRouter = require("./routes/search");
 const userRouter = require("./routes/user");
+// const tweetRouter = require("./routes/tweet");
 
 const app = express();
 
@@ -21,7 +22,8 @@ const mongoDB = require("./config/db");
 
 // Routes which Should handle the requests
 app.use("/", indexRouter);
-app.use("/api/tweet", tweetRouter);
+app.use("/api/search", tweetSearchRouter);
+// app.use("/api/tweet", tweetRouter);
 app.use("/api/user", userRouter);
 
 // Error handler

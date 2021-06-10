@@ -56,6 +56,49 @@ const addNewTweet = (req, res) => {
 		});
 };
 
+const getAllTweets = (req, res) => {
+	// find all the tweets
+	Tweet.find()
+		.select("  content  tweetImage _id  addedDate")
+		.sort({ addedDate: -1 }) // sorted the tweet
+		.limit(3)
+		.exec() // .exec() method return promise
+		.then((tweets) => {
+			// pass more information  with response
+			const responseObject = {
+				tweets: tweets.map((foundTweet) => {
+					return {
+						id: foundTweet._id,
+						content: foundTweet.content,
+						tweetImage: foundTweet.tweetImage
+							? foundTweet.tweetImage
+							: "",
+						added_date: foundTweet.addedDate,
+
+						request: {
+							type: "Get",
+							description: "Get one tweet with the id",
+							url: "http://localhost:3000/posts/" + foundTweet._id,
+						},
+					};
+				}),
+			};
+
+			res.status(200).send({
+				result: responseObject,
+				status: "Successful Found all Tweets",
+			});
+		})
+		.catch((error) => {
+			// 500 Internal Server Error
+			res.status(500).send({
+				message: "Internal Server Error",
+				error: error,
+			});
+		});
+};
+
 module.exports = {
 	addNewTweet,
+	getAllTweets,
 };
