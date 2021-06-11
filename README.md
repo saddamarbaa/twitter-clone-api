@@ -8,11 +8,12 @@ Free Open source Twitter API built by the power of JavaScript and Node,js
 * [Demo](#Demo)
 * [Technologies](#Technologies)
 * [Contributing](#Contributing)
+* [Features](#Features)
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Support](#Support)
-* [Environment Variables](#Environment)
 * [Feedback](#Feedback)
+* [Deployment](#Deployment)
 * [Screenshots](#Screenshots)
 
 
@@ -27,18 +28,19 @@ Free Open source Twitter API built by the power of JavaScript and Node,js
 * Express
 * MongoDB 
 * JSON Web Token (JWT)
+* bcryptjs
+
 
 
 # Demo
 
-# <a href="https://twitter-clone-app-saddam.herokuapp.com/">LIVE API</a>
+###  <a href="https://twitter-clone-app-saddam.herokuapp.com/">LIVE API Demo</a>
+###  <a href="https://twitter-clone-saddam.netlify.app/">LIVE Webside DEMO </a>
+###  <a href="https://www.loom.com/share/545edc779b964d2095f9dd5a5d22a0b4"> Live Video Demo </a>
+###  <a href="https://github.com/saddamarbaa/twitter-clone-app">Front-End REPO</a>
 
-#  <a href="https://twitter-clone-saddam.netlify.app/"> LIVE Webside DEMO </a>
-
-#  <a href="https://github.com/saddamarbaa/twitter-clone-app">Front-End REPO</a>
-
-#  Testing Email:      testverstion@gmail.com
-#  Testing Password:    12345test
+####   Testing Email:      testverstion@gmail.com
+####   Testing Password:    12345test
 
 
 
@@ -124,13 +126,36 @@ I'm working on it in my free time
 Build By Saddam Arbaa Project inspired by [Twitter] https://twitter.com/
 
 
+# Deployment
+To deploy this project on Heroku Flow the Flowing documentation <a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node.js Apps on Heroku</a>
+
+
 # Screenshots
 
-# responsive on all screens(Welcoming Page) 
+##  Welcoming Page 
 ![image](https://user-images.githubusercontent.com/51326421/120041084-dedeb580-c031-11eb-839c-efe2e5419d72.png)
 
-# responsive on large screens(Home Page) 
+
+##  Sign in page 
+![image](https://user-images.githubusercontent.com/51326421/121556966-8ac6ce80-ca3e-11eb-87a1-df40be9132db.png)
+
+
+
+## Log in Page
+![image](https://user-images.githubusercontent.com/51326421/121557088-a5994300-ca3e-11eb-9f0b-3b45b2787057.png)
+
+
+
+![image](https://user-images.githubusercontent.com/51326421/121612800-562a3580-ca85-11eb-91f1-450af5259953.png)
+
+
+
+##  Responsive on large screens - Home Page 
 ![image](https://user-images.githubusercontent.com/51326421/119225798-3f508d00-bb30-11eb-8580-28ea22061bf9.png)
+
+
+![image](https://user-images.githubusercontent.com/51326421/121557946-65869000-ca3f-11eb-8097-ea6c861eab81.png)
+
 
 
 
@@ -138,31 +163,15 @@ Build By Saddam Arbaa Project inspired by [Twitter] https://twitter.com/
 
 
 
-# responsive on mobile and tablet screens 
+
+## Responsive on mobile and tablet screens 
 
 ![image](https://user-images.githubusercontent.com/51326421/118638206-c7692680-b800-11eb-8734-cedbb670f6bf.png)
 
 
-# responsive on small screens
+## Responsive on small screens
 
 ![image](https://user-images.githubusercontent.com/51326421/118638285-dfd94100-b800-11eb-82fe-4b8a288edd51.png)
-
-
-
-
-# (Login Page) 
-![image](https://user-images.githubusercontent.com/51326421/118805387-129e3a80-b8d0-11eb-94dd-0027511bea53.png)
-
-
-
-
-
-# Register page 
-
-![image](https://user-images.githubusercontent.com/51326421/118805245-e7b3e680-b8cf-11eb-82f7-0a1cbedd769a.png)
-
-
-![image](https://user-images.githubusercontent.com/51326421/119062771-bf2c0980-ba01-11eb-93e1-0947386b0984.png)
 
 
 
