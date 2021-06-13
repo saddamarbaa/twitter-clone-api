@@ -43,6 +43,13 @@ Free Open source Twitter API built by the power of JavaScript and Node,js
 ####   Testing Password:    12345test
 
 
+# Features
+-  Complete user authentication users can sign in, sign out
+-  Add a new tweet
+-  Search tweet
+-  View top trends and searched
+-  Used Twiter API to get each tweet ands shows for the user on search
+
 
  # Contributing
 
