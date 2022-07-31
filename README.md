@@ -15,6 +15,7 @@ Free Open source Twitter API built by the power of JavaScript and Node,js
 * [Feedback](#Feedback)
 * [Deployment](#Deployment)
 * [Screenshots](#Screenshots)
+* [Related Projects](#Related_Projects)
 
 
  
@@ -49,6 +50,34 @@ Free Open source Twitter API built by the power of JavaScript and Node,js
 -  Search tweet
 -  View top trends and searched
 -  Used Twiter API to get each tweet ands shows for the user on search
+
+
+
+# Related_Projects
+
+
+### Open Source Ecommerce API built with | Nodejs + Express + Mongodb + JWT authentication (CRUD operations, search, sort, filter, image upload and pagination)
+
+#### <a href="https://saddam-rest-api.herokuapp.com/">LIVE API</a>
+#### <a href="https://github.com/saddamarbaa/node-express-rest-api">API REPO</a>
+
+
+
+###  Blog API built with | Nodejs + Express + Mongodb
+
+#### <a href="https://blog-post-api-sadam.herokuapp.com">LIVE API</a>
+#### <a href="https://github.com/saddamarbaa/blog-api">API REPO</a>
+####  <a href="https://github.com/saddamarbaa/blog-post-front-end-vanillaJS">Front-End REPO</a>
+####  <a href="https://saddamarbaa-blog.netlify.app/"> LIVE Webside DEMO </a>
+
+
+
+
+### Netflix API built with | Nodejs + Express + Mongodb  
+
+#### <a href="https://github.com/saddamarbaa/netflix-clone-api">API REPO</a>
+####  <a href="https://nefilx-saddam.herokuapp.com/">LIVE API Demo</a>
+
 
 
  # Contributing
